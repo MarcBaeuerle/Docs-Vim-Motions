@@ -1,27 +1,14 @@
 {
+  "name": "Docs-Vim-Motions",
+  "description": "Vim Motions with Google Docs",
+  "version": "1.0",
   "manifest_version": 3,
-  "name": "Docs Vim Motions",
-  "description": "Vim Moions within Google Docs",
-  "version": "1.0.0",
-  "action": {
-    "default_popup": "index.html"
-  },
   "permissions": [
+    "activeTab",
     "scripting"
   ],
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
-  "background": {},
-  "permissions": ["scripting", "activeTab"],
-  "content_scripts": [
-    {
-      "matches": [ "https://*/*",  "http://*/*", "file://*/*" ],
-      "js": [ "./scripts/content.js" ],
-      "run_at": "document_start",
-      "all_frames": true
-    }
-  ]
+  "action" : {},
+  "background": {
+    "service_worker": "background.js"
+  }
 }
-

@@ -1,17 +1,21 @@
 {
-  "name": "Docs-Vim-Motion",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "docs-vim-motions",
+  "version": "1.0.0",
+  "description": "Vim motions within google docs",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack/webpack.config.js"
   },
+  "keywords": [],
+  "author": "Marc Baeuerle",
+  "license": "ISC",
   "devDependencies": {
     "@types/chrome": "^0.0.255",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8",
-    "vite-plugin-chrome-extension": "^0.0.7"
+    "copy-webpack-plugin": "^11.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
